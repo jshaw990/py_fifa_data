@@ -9,18 +9,19 @@ The scatterplot includes the ability to zoom with both mouse wheel or box-area s
 [Jayden Shaw](https://github.com/jshaw990/)
 
 ## Tools Used
-- Python3
+- Python 3
 - Pandas
 - Seaborn
 - Bokeh
 - Kaggle
 
 ## Usage
-- [Fork](#) or [download](#) this repository
-- Install [Python3](https://www.python.org/downloads/)
+- [Fork](https://github.com/jshaw990/py_fifa_data/fork) or [download](https://github.com/jshaw990/py_fifa_data/archive/master.zip) this repository
+- Install [Python 3](https://www.python.org/downloads/)
 - Install requirements from *requirements.txt*:
     - `pip3 install -r requirements.txt`
-- Run the Python3 script: `python3 fifa_analysis.py`
+- Run the Python 3 script: 
+    - `python3 fifa_analysis.py`
 - A browser window will open displaying the scatterplot, and an external HTML file will be saved within the [output folder](output)
 - Items within the toolbar can be accessed on hover of the scatterplot
 - A PNG image can be saved to your default browser downloads folder using the *save icon* displayed in the tool bar
