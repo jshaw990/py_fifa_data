@@ -40,32 +40,33 @@ TOOLTIPS = HoverTool(tooltips=[
     ])
 
 plot = figure(
-    title='Fifa 19 Wage vs. Value', 
-    x_axis_label='Wage (Weekly)', 
-    y_axis_label='Player Value', 
-    plot_width=700, 
-    plot_height=700,
-    tools=[TOOLTIPS, 'pan, wheel_zoom, box_zoom, reset, save'],
-    toolbar_location='above'
+    title = 'Fifa 19 Wage vs. Value', 
+    x_axis_label = 'Wage (Weekly)', 
+    y_axis_label = 'Player Value', 
+    plot_width = 700, 
+    plot_height = 700,
+    tools = [TOOLTIPS, 'pan, wheel_zoom, box_zoom, reset, save'],
+    toolbar_location = 'above'
     )
 
 plot.circle(
     'Wage', 
     'Value',
-    color= 'black', 
-    size=10, 
-    source=df1
+    size = 10,
+    fill_alpha = 0.8,
+    line_color = 'blue',
+    source = df1
     )
 
 # Format X and Y axis into readable format
-plot.xaxis.formatter=NumeralTickFormatter(format='($0.00a)')
-plot.yaxis.formatter=NumeralTickFormatter(format='($0.00a)')
+plot.xaxis.formatter = NumeralTickFormatter(format = '($0.00a)')
+plot.yaxis.formatter = NumeralTickFormatter(format = '($0.00a)')
 
 # Hide toolbar until hover on scatterplot
 plot.toolbar.autohide = True
 
 # Output scatterplot to external HTML file and save
-output_file('output/fifa19_wage_value.html', title="Fifa 19 Wage vs. Value", mode='inline')
+output_file('output/fifa19_wage_value.html', title = 'Fifa 19 Wage vs. Value', mode = 'inline')
 
 # Display the scatterplot
 show(plot)
