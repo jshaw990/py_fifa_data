@@ -43,8 +43,8 @@ plot = figure(
     title = 'Fifa 19 Wage vs. Value', 
     x_axis_label = 'Wage (Weekly)', 
     y_axis_label = 'Player Value', 
-    plot_width = 700, 
-    plot_height = 700,
+    width = 1400, 
+    height = 700,
     tools = [TOOLTIPS, 'pan, wheel_zoom, box_zoom, reset, save'],
     toolbar_location = 'above'
     )
